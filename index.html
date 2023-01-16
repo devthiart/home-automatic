@@ -1,0 +1,82 @@
+<!--
+/******************************************************************************
+ * Ricardo Ribeiro                                                            *
+ * Arduino Mega com ESP8266 - Review                                          *
+ * Arquivo ESPMaster - ESP8266 - Arquivo HTML                                 *
+ * 12/2022 - Ricardo Ribeiro                                                  *
+ * yokay2@hotmail.com                                                         *
+ ******************************************************************************/
+-->
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HOMEAUTOMATIC V0.10</title>
+  <link href="./css/reset.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <!-- <script src="./js/main.js"></script> -->
+</head>
+
+<body onLoad="getStatus()">
+  <header>
+    <img src="./assets/img/icon.png" title="HomeSmart icone" width="70" height="70">
+    <h1>HOMEAUTOMATIC V0.10</h1>
+  </header>
+
+  <main>
+    <div class="container container__status">
+
+      <h2 class="container__title">Status</h2>
+
+      <div class="status">
+        <h2 class="status__title">Umidade do Ar<br>[ % ]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Luminosidade<br>[Lumens]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO62">N/D</span></p>
+      </div>
+    </div>
+
+    <div class="container container__controls">
+
+      <h2 class="container__title">Controles</h2>
+
+      <div class="control">
+        <h2 class="control__title">Computador<br>GPIO 27</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="evGPIO27">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO27">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(27, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(27, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(27)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Monitor PC<br>GPIO 25</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="evGPIO27">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO25">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(25, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(25, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(25)">Inverter</button>
+        </div>
+      </div>
+
+    </div>
+  
+  </main>
+
+  <footer>
+    <h4>© Dez/2022 - Ricardo Ribeiro</h4>
+  </footer>
+</body>
+
+</html>
