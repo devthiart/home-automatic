@@ -38,6 +38,41 @@
         <h2 class="status__title">Luminosidade<br>[Lumens]</h2>
         <p class="status__value"><b>Valor:</b> <span id="evGPIO62">N/D</span></p>
       </div>
+
+      <div class="status">
+        <h2 class="status__title">Temperatura<br>[°C]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Pressão Atmosferica<br />[Kpa]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Gasimetria<br>[ppm]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO63">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Altitude<br>[Metros]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Tensão<br>[V]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Corrente<br>[A]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
+
+      <div class="status">
+        <h2 class="status__title">Potência<br>[W]</h2>
+        <p class="status__value"><b>Valor:</b> <span id="evGPIO25">N/D</span></p>
+      </div>
     </div>
 
     <div class="container container__controls">
@@ -60,13 +95,104 @@
       <div class="control">
         <h2 class="control__title">Monitor PC<br>GPIO 25</h2>
         <p class="control__status">
-          <b>Status:</b> <span id="evGPIO27">N/D</span>
+          <b>Status:</b> <span id="evGPIO25">N/D</span>
         </p>
         <div class="control_buttons">
           <button class="st" type="button" id="stGPIO25">N/D</button>
           <button class="button button-on" type="button" onClick="dw(25, 1)">Ligar</button>
           <button class="button button-off" type="button" onClick="dw(25, 0)">Desligar</button>
           <button class="button" type="button" onClick="dt(25)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Radio Amador<br>GPIO 30</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="evGPIO30">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO30">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(30, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(30, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(30)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Impressora 3D<br>GPIO 23</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO23">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO23">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(23, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(23, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(23)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Bancada<br>GPIO 22</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO22">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO22">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(22, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(22, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(22)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Portão<br>GPIO 26</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO26">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO26">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(26, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(26, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(26)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Ferramentaria<br>GPIO 24</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO24">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO24">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(24, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(24, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(24)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Ventilador<br>GPIO 28</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO28">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO28">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(28, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(28, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(28)">Inverter</button>
+        </div>
+      </div>
+
+      <div class="control">
+        <h2 class="control__title">Retropie<br>GPIO 29</h2>
+        <p class="control__status">
+          <b>Status:</b> <span id="stGPIO29">N/D</span>
+        </p>
+        <div class="control_buttons">
+          <button class="st" type="button" id="stGPIO29">N/D</button>
+          <button class="button button-on" type="button" onClick="dw(29, 1)">Ligar</button>
+          <button class="button button-off" type="button" onClick="dw(29, 0)">Desligar</button>
+          <button class="button" type="button" onClick="dt(29)">Inverter</button>
         </div>
       </div>
 
